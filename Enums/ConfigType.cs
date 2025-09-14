@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ints.Core.Model.Enums
+﻿namespace Ints.Core.Model.Enums
 {
     public enum ConfigType
     {
