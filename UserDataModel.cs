@@ -1,6 +1,6 @@
 ﻿namespace Ints.Core.Model
 {
-    public record UserDataModel
+    public record UserManageData
     {
         public Guid UserId { get; set; }
         public string Login { get; set; }

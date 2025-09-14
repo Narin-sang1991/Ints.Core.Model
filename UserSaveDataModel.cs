@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Ints.Core.Model
 {
-    public record UserSaveDataModel
+    public record UserSaveData
     {
         public Guid? UserId { get; set; }
         public string Login { get; set; }
