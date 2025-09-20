@@ -11,7 +11,7 @@ namespace Ints.Core.Model
         public string Name { get; set; }
         public string Email { get; set; }
         public bool IsActive { get; set; }
-        public bool IsRequiredResetPassword { get; set; }
+        public bool IsRequiredSavePassword { get; set; }
 
         [JsonIgnore]
         public AuthType? AuthType { get; set; }
