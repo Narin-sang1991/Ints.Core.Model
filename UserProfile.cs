@@ -12,7 +12,7 @@ namespace Ints.Core.Model
         public Guid UserId { get; init; }
 
         [DataMember]
-        public ReadOnlyCollection<string> RoleCodes { get; init; }
+        public ReadOnlyCollection<string>? RoleCodes { get; init; }
 
         [DataMember]
         public string Name { get; init; }
