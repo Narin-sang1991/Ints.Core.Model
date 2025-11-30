@@ -12,6 +12,9 @@ namespace Ints.Core.Model
         public string Email { get; set; }
         public bool IsActive { get; set; }
         public bool IsRequiredSavePassword { get; set; }
+        public Guid RoleId { get; set; }
+        public Guid[]? DealerIds { get; set; }
+        public Guid[]? BeIds { get; set; }
 
         [JsonIgnore]
         public AuthType? AuthType { get; set; }
