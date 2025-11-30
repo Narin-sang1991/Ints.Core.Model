@@ -5,9 +5,9 @@ namespace Ints.Core.Model
 {
     public record UserSaveData : UserManageData
     {
-        public bool IsRequiredSavePassword { get; set; }
+        public bool IsRequiredSavePassword { get; init; }
 
         [JsonIgnore]
-        public AuthType? AuthType { get; set; }
+        public AuthType? AuthType { get; init; }
     }
 }

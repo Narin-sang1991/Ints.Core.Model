@@ -2,23 +2,23 @@
 
 public record UserSearchData
 {
-    public Guid UserId { get; set; }
-    public string Login { get; set; }
-    public string Password { get; set; }
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public bool IsActive { get; set; } 
+    public Guid UserId { get; init; }
+    public string Login { get; init; }
+    public string Password { get; init; }
+    public string Name { get; init; }
+    public string Email { get; init; }
+    public bool IsActive { get; init; }
 }
 
 public record UserManageData
 {
-    public Guid? UserId { get; set; }
-    public string Login { get; set; }
-    public string Password { get; set; }
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public bool IsActive { get; set; } 
-    public Guid RoleId { get; set; }
-    public Guid[]? DealerIds { get; set; }
-    public Guid[]? BeIds { get; set; }
+    public Guid? UserId { get; init; }
+    public string Login { get; init; }
+    public string Password { get; init; }
+    public string Name { get; init; }
+    public string Email { get; init; }
+    public bool IsActive { get; init; }
+    public Guid RoleId { get; init; }
+    public Guid[]? DealerIds { get; init; }
+    public Guid[]? BeIds { get; init; }
 }
