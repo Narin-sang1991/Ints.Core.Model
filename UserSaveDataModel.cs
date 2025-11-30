@@ -3,18 +3,9 @@ using System.Text.Json.Serialization;
 
 namespace Ints.Core.Model
 {
-    public record UserSaveData
+    public record UserSaveData : UserManageData
     {
-        public Guid? UserId { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public bool IsActive { get; set; }
         public bool IsRequiredSavePassword { get; set; }
-        public Guid RoleId { get; set; }
-        public Guid[]? DealerIds { get; set; }
-        public Guid[]? BeIds { get; set; }
 
         [JsonIgnore]
         public AuthType? AuthType { get; set; }
