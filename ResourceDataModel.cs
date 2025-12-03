@@ -1,5 +1,7 @@
 ﻿
 
+using Ints.Core.Model.Enums;
+
 namespace Ints.Core.Model;
 
 public record ResourceDetailDataModel : ResourceSearchDataModel
@@ -22,6 +24,7 @@ public record ResourceSearchDataModel : ResourceBaseData
 {
     public string? ParentName { get; set; }
     public string? AppName { get; set; }
+    public RoleLevelEnum Level { get; init; } = RoleLevelEnum.Guest;
 }
 
 public abstract record ResourceBaseData
