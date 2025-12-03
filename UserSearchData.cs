@@ -1,4 +1,6 @@
-﻿namespace Ints.Core.Model;
+﻿using Ints.Core.Model.Enums;
+
+namespace Ints.Core.Model;
 
 public record UserSearchData
 {
@@ -18,7 +20,8 @@ public record UserManageData
     public string Name { get; init; }
     public string Email { get; init; }
     public bool IsActive { get; init; }
-    public Guid RoleId { get; init; }
+    public Guid? RoleId { get; init; }
+    public RoleLevelEnum? RoleLevel { get; init; }
     public Guid[]? DealerIds { get; init; }
     public Guid[]? BeIds { get; init; }
 }
