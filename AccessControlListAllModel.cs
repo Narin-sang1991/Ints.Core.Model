@@ -6,19 +6,20 @@ namespace Ints.Core.Model;
 
 public record AccessControlListAllModel
 {
-    public OperationMemberType OperationMemberType { get; set; }
-    public Guid? OperationChildId { get; set; }
-    public string? OperationChildCode { get; set; }
-    public ResourcePrincipalType ResourceType { get; set; }
-    public string? ResourceRule { get; set; }
-    public Guid? ResourceMappingId { get; set; }
+    public Guid OperationRoleId { get; init; }
+    public OperationMemberType OperationMemberType { get; init; }
+    public Guid? OperationChildId { get; init; }
+    public string? OperationChildCode { get; init; }
+    public ResourcePrincipalType ResourceType { get; init; }
+    public string? ResourceRule { get; init; }
+    public Guid? ResourceMappingId { get; init; }
 }
 
 
 public record AccessResourceListModel
 {
-    public Guid ResourceMappingId { get; set; }
-    public ResourceMatchingType MatchingType { get; set; }
-    //public MasterType MasterMappingType { get; set; }
+    public Guid ResourceMappingId { get; init; }
+    public ResourceMatchingType MatchingType { get; init; }
+    //public MasterType MasterMappingType { get; init;}
 }
 
