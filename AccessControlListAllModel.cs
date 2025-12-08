@@ -7,12 +7,15 @@ namespace Ints.Core.Model;
 public record AccessControlListAllModel
 {
     public Guid OperationRoleId { get; init; }
+    public RoleLevelEnum OperationRoleLevel { get; init; }
     public OperationMemberType OperationMemberType { get; init; }
     public Guid? OperationChildId { get; init; }
     public string? OperationChildCode { get; init; }
     public ResourcePrincipalType ResourceType { get; init; }
     public string? ResourceRule { get; init; }
     public Guid? ResourceMappingId { get; init; }
+    public AttributeEnum? AttributeType { get; init; }
+    public string? AttributeValue { get; init; }
 }
 
 
